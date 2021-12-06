@@ -71,7 +71,7 @@ h2 a {
     display: inline-flex;
     border: none;
     padding: 0.5rem 2rem;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: sans-serif;
     text-align: center;
     width: 23rem;
@@ -81,6 +81,7 @@ h2 a {
     color: inherit;
     border: 1px solid #fff;
     transition: all 0.3s;
+    line-height: 6rem;
     background-color: deepskyblue;
 }
 
@@ -92,7 +93,8 @@ h2 a {
 
 .login--input::placeholder {
     /*color: #bbb;*/
-    color: #666666;
+    color:  white;
+    font-size: 2rem;
 }
 
 .login--btn {
@@ -526,79 +528,3 @@ border: none;
     margin: auto;
     padding-bottom: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

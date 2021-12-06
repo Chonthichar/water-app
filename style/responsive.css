@@ -14,11 +14,20 @@
         /*padding: 0.5rem;*/
     }
     .login--input {
-        width: 25rem;
-        height: 4rem;
+        width: 23rem;
+        height: 3.5rem;
         font-size: 2rem;
         padding-top: 5rem;
         color: white;
+    }
+
+
+    .login--input::placeholder {
+        /*color: #bbb;*/
+        margin: auto;
+        color:  white;
+        font-size: 5rem;
+
     }
     .login--btn {
         font-size: 6rem;
@@ -190,15 +199,26 @@
         line-height: 4rem;
         /*padding: 0.5rem;*/
     }
+
+    .login--btn {
+        font-size: 6rem;
+    }
+
     .login--input {
-        width: 25rem;
-        height: 4rem;
+        width: 23rem;
+        height: 3.5rem;
         font-size: 2rem;
         padding-top: 5rem;
         color: white;
     }
-    .login--btn {
-        font-size: 6rem;
+
+
+    .login--input::placeholder {
+        /*color: #bbb;*/
+        margin: auto;
+        color:  white;
+        font-size: 5rem;
+
     }
     .balances-label {
         display: inline-flex;
@@ -271,7 +291,7 @@
         }
         .greeting {
             padding-top: 7rem;
-            font-size: 4rem;
+            font-size: 5rem;
         }
         .sub p {
             padding-top: 4rem;
@@ -281,11 +301,20 @@
             /*padding: 0.5rem;*/
         }
         .login--input {
-            width: 25rem;
-            height: 4rem;
+            width: 23rem;
+            height: 3.5rem;
             font-size: 2rem;
             padding-top: 5rem;
             color: white;
+        }
+
+
+        .login--input::placeholder {
+            /*color: #bbb;*/
+            margin: auto;
+            color:  white;
+            font-size: 5rem;
+
         }
         .login--btn {
             font-size: 6rem;
@@ -372,10 +401,17 @@
         }
         .login--input {
             width: 25rem;
-            height: 4rem;
+            height:5rem;
             font-size: 2rem;
-            padding-top: 5rem;
+            padding-top: 1.8rem;
             color: white;
+        }
+
+        .login--input::placeholder {
+            /*color: #bbb;*/
+            margin: auto;
+            color:  white;
+            font-size: 3rem;
         }
         .login--btn {
             font-size: 6rem;
@@ -450,7 +486,8 @@
     }
     .greeting {
         padding-top: 6rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
     }
     .sub p {
         padding-top: 4rem;
@@ -459,11 +496,20 @@
         line-height: 4rem;
         /*padding: 0.5rem;*/
     }
-    .login--input {
-        width: 20rem;
-        height: 5rem;
-        font-size: 1rem;
-    }
+        .login--input {
+            width: 23rem;
+            height:3rem;
+            font-size: 2rem;
+            padding-top: 1.8rem;
+            color: white;
+        }
+
+        .login--input::placeholder {
+            /*color: #bbb;*/
+            margin: auto;
+            color:  white;
+            font-size: 3rem;
+        }
     .login--btn {
         font-size: 6rem;
     }
