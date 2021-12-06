@@ -1,0 +1,44 @@
+@media only screen and (max-width: 900px) {
+    .sup p {
+        font-size: 13rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    .sup p {
+        font-size: 10rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .sup p {
+        font-size: 10rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .sup p {
+        font-size: 10rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .sup p {
+        font-size: 10rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sup p {
+        font-size: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 280px) {
+    .sup p {
+        font-size: 3rem;
+    }
+}

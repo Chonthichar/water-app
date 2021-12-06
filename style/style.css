@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body, html {
+    font-size: 80%;
+    box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
+    color: black;
+    background-color: white;
+    height: 100vh;
+    padding: 2rem;
+    margin: 0px auto 0px auto;
+    width: 1200px;
+    line-height: 1rem;
+
+}
+h2{
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem;
+}
+
+nav {
+    display: grid;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    color: #71DFE7;
+    box-sizing: border-box;
+    /*border: 0.3rem solid black;*/
+}
+.logo {
+    justify-content: space-between;
+    font-size: 7rem;
+    line-height: 10rem;
+}
+h2 a {
+    color: #c3c3c3;
+}
+
+.greeting {
+    font-size: 4rem;
+    /*font-weight: 500;*/
+    color: #c3c3c3;
+    /*border: 0.3rem solid black;*/
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    /*display: inline;*/
+}
+
+/*please contact us for access request*/
+.sub p {
+    /*float: right;*/
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.7rem;
+    color: #666666;
+    /*padding: 0.5rem;*/
+}
+
+.text-primary {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.login--input {
+    display: inline-flex;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    width: 23rem;
+    height: 3.5rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    color: inherit;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    background-color: deepskyblue;
+}
+
+.login--input:focus {
+    outline: none;
+    border: 1px solid #CCF2F4;
+    background-color: #CCF2F4;
+}
+
+.login--input::placeholder {
+    /*color: #bbb;*/
+    color: #666666;
+}
+
+.login--btn {
+    border: none;
+    background: none;
+    font-size: 3rem;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login--btn:hover,
+.login--btn:focus {
+    outline: none;
+    color: #777
+}
+
+/*Home page balance of water and date*/
+
+.page{
+    position: relative;
+    max-width: 100rem;
+    margin: 5rem auto;
+    display: grid;
+    /*grid-template-columns: 4fr 3fr;*/
+    /*grid-template-rows: auto repeat(3, 15rem) auto;*/
+    gap: 2rem;
+    /*border: 0.3rem solid green;*/
+
+   grid-template-areas:
+                'balance'
+                'platforms'
+                'calculation'
+                 'total'
+                'update'
+                'form'
+                'log-out-timer';
+
+    /*!*  blind to show when log in and blind when log out *!*/
+    opacity: 0;
+    transition: all 1s;
+}
+.balances {
+    grid-column: 1 / span 2;
+    display:-moz-grid-line;
+    line-height: 3rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-top: 0rem;
+    /*border: 0.1rem solid red;*/
+
+}
+.balances-label {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: -0.2rem;
+    color: cornflowerblue;
+}
+
+.balances-date {
+    font-size: 1.5rem;
+    color: cornflowerblue;
+}
+
+.balances-total {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 400;
+    color: dodgerblue;
+}
+
+/*movements class -- drinking element*/
+.update {
+    /*display: grid;*/
+    grid-row: 2 / span 3;
+    background-color: lightskyblue;
+    border-radius: 1rem;
+    overflow: scroll;
+    border: 0.2rem black solid;
+}
+
+.update--row{
+    padding: 2.25rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+    /*border-bottom: 1px solid #eee;*/
+    border: 0.2rem black solid;
+}
+.update--row {
+
+}
+
+.update--type {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    padding: 0rem 1rem;
+    /*border-radius: none;*/
+    margin-right: 2rem;
+    background: black;
+    width: 13%;
+    height: 1.5rem;
+    text-align: center;
+    margin-left: 3rem;
+    line-height: 2rem;
+    /*border: 0.2rem black solid;*/
+
+}
+
+.update--date {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #666;
+}
+
+.update--value {
+    margin-left: auto;
+    font-size: 3rem;
+
+}
+
+.update--type-amount {
+    /*background-image: linear-gradient(to top left, white, dodgerblue);*/
+    background: black;
+    /*align-items: flex-end;*/
+}
+
+.update--type-remove {
+    /*background-image: linear-gradient(to top left, red, white);*/
+    background: black;
+}
+
+.update--value{
+    font-size: 1.7rem;
+    text-align: right;
+    margin-right: 5rem;
+}
+
+/*summary the amount of water*/
+.total {
+grid-row: 5/6 ;
+    clear: left;
+    align-items: baseline;
+    padding: 0 0.3rem;
+    margin-top: 1rem;
+    font-size: 30px;
+
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin-left: 10px;
+    text-align: center;
+    /*border: 0.1rem solid black;*/
+
+    opacity: 0;
+    transition: all 1s;
+}
+
+.total--text {
+font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 0.8rem;
+}
+
+.total--value {
+font-size: 2.2rem;
+    margin-right: 2.5rem;
+}
+
+.calculation {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    /*border-radius: 1rem;*/
+    padding: 3rem 4rem;
+    /*color: #333;*/
+    /*background: cornflowerblue;*/
+
+}
+
+.calculation--add{
+    /*background-image: linear-gradient(to top left, cornflowerblue, white);*/
+    padding-top: 100px;
+}
+.calculation--add input {
+    background: #98BAE7;
+   display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.calculation--add input:hover {
+    background: cornflowerblue;
+}
+
+.platforms img{
+    /*display: inline-flex;?]*/
+    background: none;
+    overflow: hidden;
+    /*border: 0.5rem solid black;*/
+   margin-left: 100px;
+    /*border: 1rem solid black;*/
+    object-fit: cover;
+    width: 900px;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    /*border: 3px solid red;*/
+}
+
+.platforms span{
+    z-index: 100;
+    position: absolute;
+    color: red;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: justify;
+    opacity: 0.7;
+    top: 40%;
+    left: 76%;
+
+    transform: translate(-50%, -50%);
+}
+
+.form{
+    /*display: inline-flex;*/
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+    /*border: 0.2rem black solid;*/
+}
+
+.water{
+    display: flex;
+    font-size: 100%;
+}
+
+.form h2{
+    /*float: right;*/
+    font-size: 2rem;
+    color: deepskyblue;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    /*text-align: right;*/
+}
+
+.form--input--user {
+    display: inline-flex;
+    /*float: right;*/
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    width: 12rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    color: inherit;
+    border: 1px solid #ffffff;
+    transition: all 0.3s;
+    background-color: deepskyblue;
+}
+.form--input--pin {
+    display: inline-flex;
+    /*float: right;*/
+    text-align: center;
+    margin: auto;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    width: 12rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    color: inherit;
+    border: 1px solid #ffffff;
+    transition: all 0.3s;
+    background-color: deepskyblue;
+}
+
+.form--input:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    background: #CCF2F4;
+}
+
+.form--btn {
+border: none;
+    /*float: right;*/
+    border-radius: 0.7rem;
+    font-size: 4rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form--btn:focus{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/*practice to use sass*/
+
+
+.add {
+    display: grid;
+    height: 10vh;
+    width:40%;
+    padding-bottom: 5vh;
+    margin: auto auto;
+    border-radius: 100%;
+}
+/*@media (max-width: 900px) {*/
+/*    background: white;*/
+/*    z-index: -1;*/
+/*    border: 0.1rem black solid;*/
+/*}*/
+
+.remove {}
+
+.add-button{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.add-button button .add {
+    cursor: pointer;
+    width: 10%;
+}
+
+/*.form--add {*/
+/*font-weight: 600;*/
+/*    font-size: 1.5rem;*/
+/*    padding-top: 10rem;*/
+/*    cursor: pointer;*/
+/*    border: 0.1rem solid grey;*/
+/*}*/
+
+/*.form--amount{*/
+/*  font-weight: 600;*/
+/*    font-size: 1.5rem;*/
+/*    line-height: 5rem;*/
+/*    text-align: center;*/
+/*    border: 0.1rem solid black;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*summary*/
+.summarization{
+    /*grid-row: 5 / 6;*/
+    display: flex;
+    margin: auto;
+    align-items: baseline;
+    padding: 2rem 0.3rem;
+    margin-top: 1rem;
+    /*border: solid 0.4rem black;*/
+}
+.summary--text{
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 0.8rem;
+    color: deepskyblue;
+}
+.summary--value{
+    font-size: 3rem;
+    margin-right: 2.5rem;
+}
+
+.summary--value--in, .summary--value--out, .summary--value--ml{
+    color: grey;
+}
+
+.log-out-timer {
+    font-weight: 600;
+    text-align: right;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: deepskyblue;
+}
+
+/*button copy*/
+.main-ic{
+    width: 100%;
+    border: none;
+    border-top: 2px solid #A2D2FF;
+    margin-bottom: 1.2rem;
+}
+
+.icon-btn--add-btn, .icon-btn--remove-btn {
+    width: 100px;
+    height: 100px;
+    padding-top: 1rem;
+    border: 1px solid #A2D2FF;
+    background-color: deepskyblue;
+    border-radius: 50px;
+    transition: width 0.2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+
+
+    /*padding-top: 1rem;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*border: 1px solid #A2D2FF;*/
+    /*background: #A2D2FF;*/
+    /*border-radius: 50px;*/
+    /*overflow: hidden;*/
+    /*!*position: relative;*!*/
+    /*!*transition: width 0.2s ease-in-out;*!*/
+}
+
+.icon-btn--add-btn:hover {
+  background-color: #B5DEFF;
+}
+.icon-btn--remove-btn:hover {
+    background-color: #B5DEFF;
+}
+
+/*.icon-btn--add-btn:active{*/
+/*    background-color: #B5DEFF;*/
+/*    box-shadow: 0 5px #666666;*/
+/*    transform: translate(4px);*/
+/*}*/
+
+.btn-txt{
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

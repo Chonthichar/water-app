@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="my first water calculation app">
+    <meta name="keywords" content="water app, healthy, body care">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./style/responsive.css">
+<!--    <link rel="stylesheet" href="./style/responsive.css">-->
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon%20.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"
+          CROSSORIGIN="anonymous">
+    <script src="https://kit.fontawesome.com/d5930ea29d.js" crossorigin="anonymous"></script>
+
+    <title>water application</title>
+</head>
+
+<body>
+<!--login page nav navigation -->
+<nav>
+    <h2 class="logo">
+        <span class="text-logo"><i class="fas fa-child"></i>Health</span><a href="index.html">Me</a></h2>
+    <p class="greeting">Log IN</p> <br>
+
+    <!-- login pin the same in html-->
+    <form class="login">
+        <input type="text" placeholder="Username" class="login--input login--input--user"/>
+        <input type="text" placeholder="Pin" maxlength="4" class="login--input login--input--pin"/>
+        <button class="login--btn">🥤</button>
+    </form>
+    <!--subtitle to ask for password-->
+</nav>
+<div class="sub">
+    <p>user: ws password: 111</p>
+</div>
+
+<!--balance of water- and date-->
+
+<!--button display drinking movements-->
+<main class="page">
+    <div id="balance">
+        <div class="balances">
+            <h1><span class="balances-label">Current glass of water</span></h1>
+            <p class="balances-date"> 05/10/2021</p>
+            <p class="balances-total">0 🥤</p>
+        </div>
+    </div>
+    <div>
+        <article class="platforms">
+            <div>
+                <!--            use instead class*/-->
+                <img src="./images/water.jpg" alt="photo section"><span></span>
+            </div>
+        </article>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <hr class="main-ic"/>
+        <button class="icon-btn--add-btn">
+            <div class="add-icon"></div>
+            <div class="btn-txt">Add</div>
+        </button>
+        <button class="icon-btn--remove-btn">
+            <div class="add-icon"></div>
+            <div class="btn-txt">Remove</div>
+        </button>
+    </div>
+
+
+    <div class="summarization">
+        <p class="summary--text">IN</p>
+        <p class="summary--value summary--value--in">0 🥛</p>
+        <p class="summary--text">Remove</p>
+        <p class="summary--value summary--value--out">0 🥛 </p>
+        <!--<p class="ml">ML</p>-->
+        <p class="summary--value summary--value--ml"> 0 Ml 🥛 </p>
+<!--        <p class="summary&#45;&#45;text">ML</p>-->
+    </div>
+
+    <!--log out timer-->
+    <div class="form form--close">
+        <h2>Close account</h2>
+        <div>
+            <form action="form form--close">
+                <input type="text" class="form--input form--input--user" placeholder="username"/>
+                <input type="password" maxlength="6" class="form--input form--input--pin" placeholder="password"/>
+                <button class="form--btn form--btn--close">🥤</button>
+<!--                <label class="form&#45;&#45;label"></label>-->
+<!--                <label class="form&#45;&#45;label"></label>-->
+            </form>
+        </div>
+    </div>
+
+    <p class="log-out-timer">
+        you will be log out in <span class="time">05:00</span>
+    </p>
+</main>
+<script src="./script/script.js"></script>
+</body>
+</html>
