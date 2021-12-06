@@ -86,7 +86,6 @@ createUserName(person);
 //Event handler
 let currentPerson; // put it outside the function to use it for the others function like when we add water
 
-
 //add balance on current balance everytime when drink water
 // reduce the first argument always call accumulator (acc) like showing that we automatically want to return
 // and have initial value of accumulator in the first loop generation. ALWAYS have both
@@ -110,7 +109,6 @@ const printBalance = function (cur) {
         }
     });
 };
-
 
 //API date using internationalizing dates
 const now = new Date();
@@ -155,7 +153,7 @@ const glassWaterSum = function (drinking) {
         summaryValueInText.textContent = `${addIn}🥛`
     });
 
-    let removeOut = drinking.filter(drink => drink < 0).reduce((cur, drink) => cur + drink, 0); //somehow this line not work
+    let removeOut = drinking.filter(drink => drink < 0).reduce((cur, drink) => cur + drink, 0);
     buttonRemove.addEventListener('click', function (e) {
         if (addIn > 0) {
             e.preventDefault()
@@ -166,7 +164,7 @@ const glassWaterSum = function (drinking) {
         }
     });
 
-    let amountMl = drinking.filter(drink => drink > 0).map(ml => (ml * 240)).reduce((cur, ml) => cur + ml, 0); //somehow this line not work
+    let amountMl = drinking.filter(drink => drink > 0).map(ml => (ml * 240)).reduce((cur, ml) => cur + ml, 0);
     buttonAdd.addEventListener('click', function (e) {
         e.preventDefault();
         if (addIn > 0) {
@@ -191,9 +189,6 @@ const glassWaterSum = function (drinking) {
     // })
 }
 
-
-
-
 //to log out by adding correct username and pin;
 buttonClose.addEventListener('click', function (e) {
     e.preventDefault();
@@ -210,7 +205,6 @@ buttonClose.addEventListener('click', function (e) {
     }
     inputCloseUser.value = inputClosePin.value = '';
 });
-
 
 //problem: 1.fix the problem when log out from chon account then log in to waru account - time continue keep running - how to stop time
 const startLogOutTimer = function () {

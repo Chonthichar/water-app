@@ -17,27 +17,31 @@ body, html {
     line-height: 1rem;
 
 }
-h2{
+
+h2 {
     font-size: 1rem;
 }
+
 p {
     font-size: 1rem;
 }
 
 nav {
     display: grid;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0.5rem;
     color: #71DFE7;
     box-sizing: border-box;
     /*border: 0.3rem solid black;*/
 }
+
 .logo {
     justify-content: space-between;
     font-size: 7rem;
     line-height: 10rem;
 }
+
 h2 a {
     color: #c3c3c3;
 }
@@ -93,7 +97,7 @@ h2 a {
 
 .login--input::placeholder {
     /*color: #bbb;*/
-    color:  white;
+    color: white;
     font-size: 2rem;
 }
 
@@ -114,7 +118,7 @@ h2 a {
 
 /*Home page balance of water and date*/
 
-.page{
+.page {
     position: relative;
     max-width: 100rem;
     margin: 5rem auto;
@@ -124,7 +128,7 @@ h2 a {
     gap: 2rem;
     /*border: 0.3rem solid green;*/
 
-   grid-template-areas:
+    grid-template-areas:
                 'balance'
                 'platforms'
                 'calculation'
@@ -137,9 +141,10 @@ h2 a {
     opacity: 0;
     transition: all 1s;
 }
+
 .balances {
     grid-column: 1 / span 2;
-    display:-moz-grid-line;
+    display: -moz-grid-line;
     line-height: 3rem;
     align-items: flex-end;
     justify-content: space-between;
@@ -150,6 +155,7 @@ h2 a {
     /*border: 0.1rem solid red;*/
 
 }
+
 .balances-label {
     font-size: 3rem;
     font-weight: 500;
@@ -179,13 +185,14 @@ h2 a {
     border: 0.2rem black solid;
 }
 
-.update--row{
+.update--row {
     padding: 2.25rem 4rem 5rem;
     display: flex;
     align-items: center;
     /*border-bottom: 1px solid #eee;*/
     border: 0.2rem black solid;
 }
+
 .update--row {
 
 }
@@ -232,7 +239,7 @@ h2 a {
     background: black;
 }
 
-.update--value{
+.update--value {
     font-size: 1.7rem;
     text-align: right;
     margin-right: 5rem;
@@ -240,7 +247,7 @@ h2 a {
 
 /*summary the amount of water*/
 .total {
-grid-row: 5/6 ;
+    grid-row: 5/6;
     clear: left;
     align-items: baseline;
     padding: 0 0.3rem;
@@ -260,14 +267,14 @@ grid-row: 5/6 ;
 }
 
 .total--text {
-font-size: 1.2rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 0.8rem;
 }
 
 .total--value {
-font-size: 2.2rem;
+    font-size: 2.2rem;
     margin-right: 2.5rem;
 }
 
@@ -281,13 +288,14 @@ font-size: 2.2rem;
 
 }
 
-.calculation--add{
+.calculation--add {
     /*background-image: linear-gradient(to top left, cornflowerblue, white);*/
     padding-top: 100px;
 }
+
 .calculation--add input {
     background: #98BAE7;
-   display: block;
+    display: block;
     margin-right: auto;
     margin-left: auto;
 
@@ -297,12 +305,12 @@ font-size: 2.2rem;
     background: cornflowerblue;
 }
 
-.platforms img{
+.platforms img {
     /*display: inline-flex;?]*/
     background: none;
     overflow: hidden;
     /*border: 0.5rem solid black;*/
-   margin-left: 100px;
+    margin-left: 100px;
     /*border: 1rem solid black;*/
     object-fit: cover;
     width: 900px;
@@ -312,7 +320,7 @@ font-size: 2.2rem;
     /*border: 3px solid red;*/
 }
 
-.platforms span{
+.platforms span {
     z-index: 100;
     position: absolute;
     color: red;
@@ -326,18 +334,18 @@ font-size: 2.2rem;
     transform: translate(-50%, -50%);
 }
 
-.form{
+.form {
     /*display: inline-flex;*/
     grid-template-columns: 2.5fr 1fr 2.5fr;
     /*border: 0.2rem black solid;*/
 }
 
-.water{
+.water {
     display: flex;
     font-size: 100%;
 }
 
-.form h2{
+.form h2 {
     /*float: right;*/
     font-size: 2rem;
     color: deepskyblue;
@@ -362,6 +370,7 @@ font-size: 2.2rem;
     transition: all 0.3s;
     background-color: deepskyblue;
 }
+
 .form--input--pin {
     display: inline-flex;
     /*float: right;*/
@@ -381,14 +390,14 @@ font-size: 2.2rem;
     background-color: deepskyblue;
 }
 
-.form--input:focus{
+.form--input:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.6);
     background: #CCF2F4;
 }
 
 .form--btn {
-border: none;
+    border: none;
     /*float: right;*/
     border-radius: 0.7rem;
     font-size: 4rem;
@@ -397,11 +406,10 @@ border: none;
     transition: all 0.3s;
 }
 
-.form--btn:focus{
+.form--btn:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.8);
 }
-
 
 
 /*practice to use sass*/
@@ -410,11 +418,12 @@ border: none;
 .add {
     display: grid;
     height: 10vh;
-    width:40%;
+    width: 40%;
     padding-bottom: 5vh;
     margin: auto auto;
     border-radius: 100%;
 }
+
 /*@media (max-width: 900px) {*/
 /*    background: white;*/
 /*    z-index: -1;*/
@@ -422,12 +431,13 @@ border: none;
 /*}*/
 
 
-.add-button{
+.add-button {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
 }
+
 .add-button button .add {
     cursor: pointer;
     width: 10%;
@@ -451,7 +461,7 @@ border: none;
 /*}*/
 
 /*summary*/
-.summarization{
+.summarization {
     /*grid-row: 5 / 6;*/
     display: flex;
     margin: auto;
@@ -460,19 +470,21 @@ border: none;
     margin-top: 1rem;
     /*border: solid 0.4rem black;*/
 }
-.summary--text{
+
+.summary--text {
     font-size: 3rem;
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 0.8rem;
     color: deepskyblue;
 }
-.summary--value{
+
+.summary--value {
     font-size: 3rem;
     margin-right: 2.5rem;
 }
 
-.summary--value--in, .summary--value--out, .summary--value--ml{
+.summary--value--in, .summary--value--out, .summary--value--ml {
     color: grey;
 }
 
@@ -485,7 +497,7 @@ border: none;
 }
 
 /*button copy*/
-.main-ic{
+.main-ic {
     width: 100%;
     border: none;
     border-top: 2px solid #A2D2FF;
@@ -508,8 +520,9 @@ border: none;
 }
 
 .icon-btn--add-btn:hover {
-  background-color: #B5DEFF;
+    background-color: #B5DEFF;
 }
+
 .icon-btn--remove-btn:hover {
     background-color: #B5DEFF;
 }
@@ -520,7 +533,7 @@ border: none;
 /*    transform: translate(4px);*/
 /*}*/
 
-.btn-txt{
+.btn-txt {
     font-size: 1.3rem;
     color: white;
     text-align: center;
