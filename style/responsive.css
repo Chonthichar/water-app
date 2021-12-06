@@ -86,8 +86,8 @@
         font-size: 13rem;
     }
     .greeting {
-        padding-top: 5rem;
-        font-size: 6rem;
+        padding-top: 7rem;
+        font-size: 4rem;
     }
     .sub p {
         padding-top: 4rem;
@@ -97,9 +97,11 @@
         /*padding: 0.5rem;*/
     }
     .login--input {
-        width: 26rem;
-        height: 6rem;
+        width: 25rem;
+        height: 4rem;
         font-size: 2rem;
+        padding-top: 5rem;
+        color: white;
     }
     .login--btn {
         font-size: 6rem;
@@ -148,7 +150,8 @@
         line-height: 5rem;
         width: 26rem;
         height: 5.5rem;
-        font-size: 2rem;
+        font-size: 3.5rem;
+        color: white;
     }
     .form--btn{
         line-height: 5rem;
@@ -156,11 +159,13 @@
     }
     .form h2 {
         font-size: 4rem;
+        padding-bottom: 4rem;
     }
     .log-out-timer {
         line-height: 5rem;
-        font-size: 30px;
+        font-size: 3rem;
         padding-bottom: 60px;
+        padding-right: 30px;
     }
 }
 
