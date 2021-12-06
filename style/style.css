@@ -253,7 +253,7 @@ grid-row: 5/6 ;
     text-align: center;
     /*border: 0.1rem solid black;*/
 
-    opacity: 0;
+    /*opacity: 0;*/
     transition: all 1s;
 }
 
@@ -419,7 +419,6 @@ border: none;
 /*    border: 0.1rem black solid;*/
 /*}*/
 
-.remove {}
 
 .add-button{
     display: table-cell;
@@ -501,17 +500,9 @@ border: none;
     transition: width 0.2s ease-in-out;
     cursor: pointer;
     outline: none;
-
-
-    /*padding-top: 1rem;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-    /*border: 1px solid #A2D2FF;*/
-    /*background: #A2D2FF;*/
-    /*border-radius: 50px;*/
-    /*overflow: hidden;*/
-    /*!*position: relative;*!*/
-    /*!*transition: width 0.2s ease-in-out;*!*/
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s ease-in-out;
 }
 
 .icon-btn--add-btn:hover {

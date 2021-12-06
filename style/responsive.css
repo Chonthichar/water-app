@@ -1,12 +1,18 @@
 @media only screen and (max-width: 900px) {
-    .sup p {
-        font-size: 13rem;
+    /*.sup p {*/
+    /*    font-size: 13rem;*/
+    /*}*/
+    .logo{
+        font-size: 19rem;
     }
 }
 
 @media (min-width: 1201px) {
+    /*.logo{*/
+    /*    font-size: 19rem;*/
+    /*}*/
     .sup p {
-        font-size: 10rem;
+        font-size: 20rem;
     }
 }
 
@@ -14,7 +20,9 @@
     .sup p {
         font-size: 10rem;
     }
-
+    /*.logo{*/
+    /*    font-size: 19rem;*/
+    /*}*/
 }
 
 
@@ -22,17 +30,98 @@
     .sup p {
         font-size: 10rem;
     }
+    /*.logo{*/
+    /*    font-size: 19rem;*/
+    /*}*/
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    .sup p {
+
+    .body{
+
+    }
+    .logo{
         font-size: 10rem;
+    }
+    .greeting {
+        padding-top: 5rem;
+        font-size: 4.5rem;
+    }
+    .sub p {
+        padding-top: 4rem;
+        /*float: right;*/
+        font-size: 4rem;
+        line-height: 4rem;
+        /*padding: 0.5rem;*/
+    }
+    .login--input {
+        width: 23rem;
+        height: 4.5rem;
+        font-size: 2rem;
+    }
+    .login--btn {
+        font-size: 6rem;
+    }
+    .balances-label {
+        display: inline-flex;
+        float: left;
+       border-width: 100%;
+        font-size: 5rem;
+        /*text-align: left;*/
+        margin: 0;
+        border: 0.2rem black solid;
+        line-height: 6rem;
+    }
+    .balances-date {
+        font-size: 2rem;
+        line-height: 5rem;
+        padding-top: 3rem;
+    }
+    .balances-total {
+        padding-top: 4rem;
+        line-height: 4rem;
+        font-size: 6rem;
+        text-align: center;
+    }
+    .icon-btn--add-btn, .icon-btn--remove-btn {
+        width: 200px;
+        height: 200px;
+        padding-top: 1rem;
+        border: 1px solid #A2D2FF;
+        background-color: deepskyblue;
+        border-radius: 100px;
+    }
+    .btn-txt{
+        font-size: 2.5rem;
+    }
+    .summary--text{
+        line-height: 5rem;
+        font-size: 4rem;
+    }
+    .form--input--user, .form--input--pin{
+        line-height: 5rem;
+        width: 23rem;
+        height: 4.5rem;
+        font-size: 2rem;
+    }
+    .form--btn{
+        line-height: 5rem;
+        font-size: 5rem;
+    }
+    .log-out-timer {
+        line-height: 5rem;
+        font-size: 30px;
+        padding-bottom: 60px;
+
     }
 }
 
 @media screen and (max-width: 600px) {
     .sup p {
-        font-size: 10rem;
+        font-size: 20rem;
+    }
+    .logo{
+        font-size: 19rem;
     }
 }
 
@@ -40,5 +129,8 @@
 @media only screen and (max-width: 280px) {
     .sup p {
         font-size: 3rem;
+    }
+    .logo{
+        font-size: 19rem;
     }
 }
